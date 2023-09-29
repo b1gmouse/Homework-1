@@ -22,7 +22,7 @@ int main() {
 
 	std::cout << "Input n: ";
 	std::cin >> n;
-	while ((!std::cin)) {
+	while ((!std::cin) || (n<1)) {
 		std::cout << std::endl;
 		std::cin.clear();
 		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
